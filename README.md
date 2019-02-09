@@ -1,8 +1,10 @@
 # winapi-framework
 
-// Copyright ⓒ https://github.com/KPU-WARP \n
-// 무단 전재 및 재배포 금지 \n
-// 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다. \n
+[저작권]
+  - Copyright ⓒ https://github.com/KPU-WARP
+  - 무단 전재 및 재배포 금지
+  - 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다.
+  - 새로 생성되는 모든 코드에는 저작권을 표시해주시면 감사하겠습니다.
 
  [프로젝트 생성시 고려사항]
   - 친절한 주석
