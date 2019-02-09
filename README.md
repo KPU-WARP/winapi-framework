@@ -1,15 +1,14 @@
 # winapi-framework
 
-// Copyright ⓒ https://github.com/KPU-WARP
-// 무단 전재 및 재배포 금지
-// 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다.
+// Copyright ⓒ https://github.com/KPU-WARP \n
+// 무단 전재 및 재배포 금지 \n
+// 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다. \n
 
  [프로젝트 생성시 고려사항]
   - 친절한 주석
   - FPS 윈도우 표시는 WM_TIMER 기반이므로 개발하지 않았습니다.
   - PeekMessage 기반입니다.
   - 더블 버퍼링은 WM_PAINT에서 진행합니다.
-  - 
 
 [제한사항]
  - C++ 기반 입니다. 
