@@ -1,7 +1,7 @@
 
 // Copyright ⓒ https://github.com/KPU-WARP
 // 무단 전재 및 재배포 금지
-// 코드 사용 시KoreaGameMaker@gmail.com 연락하시길 바랍니다.
+// 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다.
 
 #include "stdafx.h"
 #include "GameFrameWork.h"
@@ -27,18 +27,17 @@ void WGameFrameWork::Clear()
 void WGameFrameWork::Create(HWND hWnd)
 {
 	m_hWnd = hWnd;
-	x = 10;
 }
 
 void WGameFrameWork::OnDraw(HDC hdc)
 {
+	static int x = 10;
 	x++;
-	Rectangle(hdc, 10+x, 10, 100+x, 100);
+	Rectangle(hdc, x + 10, 10, x + 100, 100);
 }
 
 void WGameFrameWork::OnUpdate(const float frameTime)
 {
-	x++;
 }
 
 void WGameFrameWork::KeyBoard(UINT iMessage, WPARAM wParam, LPARAM lParam)

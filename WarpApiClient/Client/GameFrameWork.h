@@ -2,7 +2,7 @@
 
 // Copyright ⓒ https://github.com/KPU-WARP
 // 무단 전재 및 재배포 금지
-// 코드 사용 시KoreaGameMaker@gmail.com 연락하시길 바랍니다.
+// 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다.
 
 class WGameFrameWork
 {
@@ -22,7 +22,5 @@ public:
 
 private:
 	HWND	m_hWnd;
-
-	int		x;
 };
 

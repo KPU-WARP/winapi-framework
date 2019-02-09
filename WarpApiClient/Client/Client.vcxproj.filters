@@ -36,9 +36,6 @@
     <ClInclude Include="Client.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="convention.ini">
-      <Filter>코딩 컨벤션</Filter>
-    </ClInclude>
     <ClInclude Include="Define.h">
       <Filter>Defnie</Filter>
     </ClInclude>
