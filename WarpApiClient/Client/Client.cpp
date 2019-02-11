@@ -26,6 +26,15 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
+ // 편한 디버깅 환경을 제공하기 위해, 디버그 모드일 때, 콘솔창을 켜줍니다.
+#ifdef _DEBUG
+#ifdef UNICODE
+#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console") 
+#else
+#pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console") 
+#endif
+#endif
+
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
@@ -46,7 +55,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
 
-	while (1)
+	while (true)
 	{
 		if (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
 		{
@@ -58,6 +67,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			}
 		}
 	}
+
 	gGameFrameWork.Clear();
 
     return (int) msg.wParam;
@@ -81,12 +91,12 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
     wcex.cbClsExtra     = 0;
     wcex.cbWndExtra     = 0;
     wcex.hInstance      = hInstance;
-    wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_CLIENT));
+    wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_WARP));
     wcex.hCursor        = LoadCursor(nullptr, IDC_ARROW);
     wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
     wcex.lpszMenuName   = MAKEINTRESOURCEW(IDC_CLIENT);
     wcex.lpszClassName  = szWindowClass;
-    wcex.hIconSm        = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
+    wcex.hIconSm        = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_WARP));
 
     return RegisterClassExW(&wcex);
 }
