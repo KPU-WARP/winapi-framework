@@ -13,14 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="GameFrameWork">
-      <UniqueIdentifier>{3e2eaf91-a8f1-4b89-aafe-d4925852b1f2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="코딩 컨벤션">
       <UniqueIdentifier>{fcbe488c-3b35-4fea-a182-54ef12d198ce}</UniqueIdentifier>
     </Filter>
     <Filter Include="Defnie">
       <UniqueIdentifier>{6a187ea5-2b13-448a-97c2-92278b6b5c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework">
+      <UniqueIdentifier>{3e2eaf91-a8f1-4b89-aafe-d4925852b1f2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,8 +39,8 @@
     <ClInclude Include="Define.h">
       <Filter>Defnie</Filter>
     </ClInclude>
-    <ClInclude Include="GameFrameWork.h">
-      <Filter>GameFrameWork</Filter>
+    <ClInclude Include="GameFramework.h">
+      <Filter>GameFramework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -50,8 +50,8 @@
     <ClCompile Include="Client.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GameFrameWork.cpp">
-      <Filter>GameFrameWork</Filter>
+    <ClCompile Include="GameFramework.cpp">
+      <Filter>GameFramework</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
