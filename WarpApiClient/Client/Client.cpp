@@ -13,7 +13,7 @@
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
-static WGameFrameWork gGameFrameWork;
+static WGameFramework gGameFramework;
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -68,7 +68,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		}
 	}
 
-	gGameFrameWork.Clear();
+	gGameFramework.Clear();
 
     return (int) msg.wParam;
 }
@@ -146,7 +146,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 		case WM_CREATE:
 			{
-				gGameFrameWork.Create(hWnd);
+				gGameFramework.Create(hWnd);
 				SetTimer(hWnd, MAIN_TIMER, MAIN_TIEMR_FRAME, NULL);
 			}
 			break;
@@ -159,7 +159,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			HDC GLayDC = CreateCompatibleDC(mainHDC);
 			SelectObject(GLayDC, GLay);
 
-			gGameFrameWork.OnDraw(GLayDC);
+			gGameFramework.OnDraw(GLayDC);
 
 			BitBlt(mainHDC, 0, 0, FRAME_WIDTH, FRAME_HEIGHT, GLayDC, 0, 0, SRCCOPY);
 			DeleteDC(GLayDC);
@@ -170,7 +170,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 		case WM_TIMER:
 		{
-			gGameFrameWork.OnUpdate();
+			gGameFramework.OnUpdate();
 			InvalidateRgn(hWnd, NULL, false);
 		}
 		break;
@@ -179,7 +179,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		case WM_KEYDOWN:
 		case WM_KEYUP:
 		{
-			gGameFrameWork.KeyBoard(message, wParam, lParam);
+			gGameFramework.KeyBoard(message, wParam, lParam);
 		}
 		break;
 

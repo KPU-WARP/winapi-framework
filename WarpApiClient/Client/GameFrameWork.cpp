@@ -4,43 +4,43 @@
 // 코드 사용 시 KoreaGameMaker@gmail.com 연락하시길 바랍니다.
 
 #include "stdafx.h"
-#include "GameFrameWork.h"
+#include "GameFramework.h"
 
 
-WGameFrameWork::WGameFrameWork()
+WGameFramework::WGameFramework()
 {
 	Clear();
 }
 
-WGameFrameWork::~WGameFrameWork()
+WGameFramework::~WGameFramework()
 {
 }
 
-void WGameFrameWork::Reset()
+void WGameFramework::Reset()
 {
 }
 
-void WGameFrameWork::Clear()
+void WGameFramework::Clear()
 {
 }
 
-void WGameFrameWork::Create(HWND hWnd)
+void WGameFramework::Create(HWND hWnd)
 {
 	m_hWnd = hWnd;
 }
 
-void WGameFrameWork::OnDraw(HDC hdc)
+void WGameFramework::OnDraw(HDC hdc)
 {
 	static int x = 10;
 	x++;
 	Rectangle(hdc, x + 10, 10, x + 100, 100);
 }
 
-void WGameFrameWork::OnUpdate(const float frameTime)
+void WGameFramework::OnUpdate(const float frameTime)
 {
 }
 
-void WGameFrameWork::KeyBoard(UINT iMessage, WPARAM wParam, LPARAM lParam)
+void WGameFramework::KeyBoard(UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
 	switch (iMessage)
 	{
