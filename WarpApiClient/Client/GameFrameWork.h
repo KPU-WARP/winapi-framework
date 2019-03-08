@@ -1,16 +1,14 @@
 #pragma once
 
-// Copyright ¨Ï https://github.com/KPU-WARP
-// ¹«´Ü ÀüÀç ¹× Àç¹èÆ÷ ±İÁö
-// ÄÚµå »ç¿ë ½Ã KoreaGameMaker@gmail.com ¿¬¶ôÇÏ½Ã±æ ¹Ù¶ø´Ï´Ù.
+// Copyright â“’ https://github.com/KPU-WARP
+// ë¬´ë‹¨ ì „ì¬ ë° ì¬ë°°í¬ ê¸ˆì§€
+// ì½”ë“œ ì‚¬ìš© ì‹œ KoreaGameMaker@gmail.com ì—°ë½í•˜ì‹œê¸¸ ë°”ëë‹ˆë‹¤.
 
 class WGameFramework
 {
 public:
 	WGameFramework();
-
 	~WGameFramework();
-
 
 	virtual void Reset();
 	virtual void Clear();
