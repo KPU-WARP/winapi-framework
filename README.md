@@ -14,6 +14,7 @@ __목적__
 __Contributor__
   - [이소현](https://github.com/leesohyun129)
   - [김영태](https://github.com/on1659)
+  - [김도율](https://github.com/LusainKim)
   - [원성연](https://github.com/GameForPeople)
 
 ----
