@@ -24,7 +24,7 @@
 #include <iostream>
 
 #include "Define.h"
-#include "GameFrameWork.h"
+#include "GameFramework.h"
 
 using namespace std;
 
